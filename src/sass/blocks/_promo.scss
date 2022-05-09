@@ -1,0 +1,87 @@
+.promo{
+    min-height: 650px;
+    padding: 21px 0 93px 0;
+    background: url('../../img/bg/run_bg.jpg') center (center/cover) no-repeat;
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 90px;
+    }
+    &__header{
+        color: #fff;
+        font-size: 42px;
+        font-weight: 700;
+        text-decoration: uppercase;
+        line-height: 42px;
+    }
+    &__subheader{
+        color:#fff;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 17px;
+    }
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 65px;
+        width: 425px;
+    }
+    &__icon{
+        width: 108px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        img{
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        
+    }
+    &__link{
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 500;
+        color: #fff;
+        margin-top: 8px;
+        a{
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+                color: $hoverLink-color;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px){
+    .promo{
+        &__wrapper{
+            align-items: center;
+        }
+    }
+}
+
+@media(max-width: 576px){
+    .promo{
+        &__header{
+            font-size: 30px;
+        }
+        &__subheader{
+            font-size: 15px;
+        }
+        &__icons{
+            width: 100%;
+        }
+        &__icon{
+            width: 90px;
+            font-size: 10px
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.title{
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+    color: $black-color;
+    text-transform: uppercase;
+}
+
+@media(max-width: 576px){
+    .title{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+}
