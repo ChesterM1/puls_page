@@ -35,6 +35,7 @@
 
 @media(max-width: 991px){
     .slider{
+        min-height: 550px;
         &__wrapper{
             width: 550px;
         }
@@ -47,7 +48,8 @@
 
 @media(max-width: 768px){
     .slider{
-        padding: 40px 0;
+        min-height: 460px;
+        padding-top: 40px;
         &__wrapper{
             width: 440px;
         }
@@ -61,14 +63,12 @@
 @media(max-width: 576px){
     .slider{
         padding: 30px 0;
+        min-height: 320px;
         &__wrapper{
             width: 300px;
         }
         &_img{
             width: 300px;
-        }
-        &__wrapper{
-            // margin: 0;
         }
     }
     .container{

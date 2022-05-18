@@ -54,24 +54,24 @@ window.addEventListener('DOMContentLoaded', ()=>{
             let touchMoveX = null;
             let touchEndX = null;
 
+
             sliderBox.addEventListener('touchstart', (e)=>{
                 touchStartX =  e.changedTouches[0].clientX;
              });
 
             sliderBox.addEventListener('touchmove', (e)=>{
                 touchMoveX = e.changedTouches[0].clientX;
-                const translateView = touchMoveX -  slidePosition * imgWidth;
+                let translateView = touchMoveX -  slidePosition * imgWidth;
                 sliderBox.style.transform = `translateX(${translateView}px)`;
                 
             });
 
             sliderBox.addEventListener('touchend', (e)=>{
                 touchEndX = e.changedTouches[0].clientX;
-                chengeTouchSlide();
+                    chengeTouchSlide();
             });
 
             function chengeTouchSlide (){
-                console.log(`start: ${touchStartX}`, `end: ${touchEndX}` );
                 if ( touchStartX > touchEndX ){  
                     nextSlide();
                 }
@@ -87,4 +87,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
     }
     
     slider();
+
+
+
 });
