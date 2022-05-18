@@ -26,6 +26,14 @@
     }
 }
 
+@media(max-width: 768px){
+    .title{
+        &_left{
+            text-align: center;
+        }
+    }
+}
+
 @media(max-width: 576px){
     .title{
         font-size: 20px;

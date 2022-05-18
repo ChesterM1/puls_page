@@ -18,6 +18,15 @@
     }
 }
 
+@media(max-width: 768px){
+    .consultation{
+        &__subtitle{
+            text-align: center;
+        }
+        
+    }
+}
+
 @media(max-width: 576px){
     .consultation{
         padding: 30px 10px;
