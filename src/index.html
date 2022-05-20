@@ -25,7 +25,7 @@
 
                 <div class="header__contacts">
                     <a href="tel:+74999228974" class="header__phone">+7 (499) 922-89-74</a>
-                    <button class="button">заказать звонок</button>
+                    <button class="button" data-button="call">заказать звонок</button>
 
                 </div>
             </header>
@@ -50,7 +50,7 @@
                         на все вопросы</div>
                 </div>
 
-                <button class="button button_main">заказать консультацию</button>
+                <button class="button button_main" data-button="call">заказать консультацию</button>
                 <div class="promo__link">
                     или
                     <a href="#">перейти в каталог</a>
@@ -143,7 +143,7 @@
                     <div class="catalog-item__wrapper">
                         <div class="catalog-item__content catalog-item__content_active">
                             <img src="img/headr_rate.png" alt="pulsometr" class="catalog-item__img">
-                            <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                            <div class="catalog-item__subtitle">Пульсометр Polar FT30</div>
                             <div class="catalog-item__descr">Для первых шагов в тренировках, основанных на сердечном ритме</div>
                             <a href="" class="catalog-item__link">ПОДРОБНЕЕ</a>
                         </div>
@@ -505,8 +505,42 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="modal" id='consultation'>
+            <div class="modal__subtitle">Просто заполните форму заявки</div>
+            <div class="modal__descr">и мы перезвоним вам в течении 10 минут</div>
+            <div class="modal__close">&times;</div>
+            <form action="#" class="feed-form feed-form__modal modal_mobile">
+                <input type="text" name="name" placeholder="Ваше имя" required >
+                <input type="tel" name="phone" placeholder="Ваш телефон" required >
+                <input type="email" name="email" placeholder="Ваш E-mail" required >
+                <button class="button button__submit">заказать кОНСУЛЬТАЦИЮ</button>
+            </form>
+        </div>
+
+        <div class="modal" id='order'>
+            <div class="modal__subtitle">Ваш заказ:</div>
+            <div class="modal__descr" data-buyItem="item">Пульсометр Polar FT1</div>
+            <div class="modal__close">&times;</div>
+            <form action="#" class="feed-form feed-form__modal modal_mobile">
+                <input type="text" name="name" placeholder="Ваше имя" required>
+                <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                <input type="email" name="email" placeholder="Ваш E-mail" required>
+                <button class="button button__submit">Купить</button>
+            </form>
+        </div>
+
+        <div class="modal modal-thenks" id='thenks'>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__descr modal-thenks__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
+            <div class="modal__close">&times;</div>
+        </div>
+    </div>
+
     <script src="js/slider.js"></script>
     <script src="js/tabs.js"></script>
+    <script src="js/modal.js"></script>
+
 
 </body>
 </html>

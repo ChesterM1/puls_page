@@ -3,6 +3,9 @@
     width: 300px;
     display: flex;
     flex-direction: column;
+    &__modal{
+        margin: 0 auto;
+    }
     input{
         padding: 0 21px;
         font-size: 14px;
@@ -23,3 +26,4 @@
         margin: 36px auto;
     }
 }
+
